@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - E-Commerce Website</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>ShopEasy</h1>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="catogories.html">Categories</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="account.html">My Account</a></li> <!-- New link for user account -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="login-page">
+        <div class="login-container">
+            <h2>Login to Your Account</h2>
+            <form action="dashboard.html" method="POST">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <small class="error-message">Please enter a valid email address.</small>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <small class="error-message">Please enter your password.</small>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    <label for="remember-me">Remember Me</label>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="login-btn">Login</button>
+                </div>
+                <div class="form-group">
+                    <a href="forgot-password.html">Forgot Password?</a>
+                </div>
+                <div class="form-group">
+                    <p>Don't have an account? <a href="register.html">Sign Up</a></p>
+                </div>
+            </form>
+            <div class="social-login">
+                <p>Or login with:</p>
+                <button class="social-btn facebook">Facebook</button>
+                <button class="social-btn google">Google</button>
+                <button class="social-btn twitter">Twitter</button>
+                <button class="social-btn linkedin">LinkedIn</button>
+                <button class="social-btn github">GitHub</button>
+            </div>
+            <div class="additional-info">
+                <p>By logging in, you agree to our <a href="terms.html">Terms and Conditions</a> and <a href="privacy.html">Privacy Policy</a>.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <p>&copy; 2024 E-Commerce Website</p>
+        </div>
+        <div class="footer-right">
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

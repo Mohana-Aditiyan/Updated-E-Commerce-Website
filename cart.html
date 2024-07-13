@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Your Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ShopEasy</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="account.html">My Account</a></li> <!-- New link for user account -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cart">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            <div id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div id="total">
+                <p>Total Amount: <span id="total-amount">$0</span></p>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+
+            <!-- Added Related Information -->
+            <section class="cart-summary">
+                <h2>Cart Summary</h2>
+                <p>Items in Cart: <span id="item-count">0</span></p>
+                <p>Estimated Delivery: <span id="delivery-date">N/A</span></p>
+                <p>Shipping Cost: <span id="shipping-cost">Free</span></p>
+            </section>
+
+            <section class="recommended-products">
+                <h2>Recommended for You</h2>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="cart-images/shoe.jpg" alt="Product 1">
+                        <h3>shoe</h3>
+                        <p class="price">$29.99</p>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="cart-images/handbag.jpg" alt="Product 2">
+                        <h3>Hand Bag</h3>
+                        <p class="price">$49.99</p>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="cart-images/samsung.jpg" alt="Product 3">
+                        <h3>Samsung Galaxy Z</h3>
+                        <p class="price">$19.99</p>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="cart-images/redmi.jpg" alt="Product 4">
+                        <h3>Redmi Note 11 </h3>
+                        <p class="price">$39.99</p>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="cart-images/bincover.jpg" alt="Product 5">
+                        <h3>Dustbin Cover</h3>
+                        <p class="price">$59.99</p>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="cart-images/wall.jpg" alt="Product 6">
+                        <h3>Wall Sticker</h3>
+                        <p class="price">$24.99</p>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p>"Great product, fast delivery!" - <strong>John Doe</strong></p>
+                    <p>★★★★★</p>
+                </div>
+                <div class="review">
+                    <p>"Excellent quality and service." - <strong>Jane Smith</strong></p>
+                    <p>★★★★★</p>
+                </div>
+                <div class="review">
+                    <p>"I love shopping here, always a great experience." - <strong>Sarah Lee</strong></p>
+                    <p>★★★★★</p>
+                </div>
+            </section>
+
+            <section class="faq">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <h3>How can I track my order?</h3>
+                    <p>You can track your order using the tracking link provided in your order confirmation email.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What is your return policy?</h3>
+                    <p>We offer a 30-day return policy on all items. Please visit our return policy page for more details.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How can I contact customer support?</h3>
+                    <p>You can contact our customer support team via the Contact Us page or by calling our support hotline.</p>
+                </div>
+            </section>
+
+            <!-- New Sections Added -->
+
+            <section class="promo-codes">
+                <h2>Promo Codes</h2>
+                <div class="promo-code-item">
+                    <p>Save 10% on your next order: <strong>SHOP10</strong></p>
+                </div>
+                <div class="promo-code-item">
+                    <p>Free shipping on orders over $50: <strong>FREESHIP50</strong></p>
+                </div>
+            </section>
+
+            <section class="recently-viewed">
+                <h2>Recently Viewed</h2>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="cart-images/football.jpg" alt="Recently Viewed 1">
+                        <h3>football</h3>
+                        <p class="price">$19.99</p>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="cart-images/smartphone.jpg" alt="Recently Viewed 2">
+                        <h3>smartphone</h3>
+                        <p class="price">$29.99</p>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="cart-images/laptop.jpg" alt="Recently Viewed 3">
+                        <h3>laptop</h3>
+                        <p class="price">$39.99</p>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="featured-brands">
+                <h2>Featured Brands</h2>
+                <div class="brand-item">
+                    <img src="cart-images/brand1.jpg" alt="Brand 1">
+                    <p>Apple</p>
+                </div>
+                <div class="brand-item">
+                    <img src="cart-images/brand2.jpg" alt="Brand 2">
+                    <p>Nike</p>
+                </div>
+                <div class="brand-item">
+                    <img src="cart-images/brand3.jpg" alt="Brand 3">
+                    <p>Ferrari</p>
+                </div>
+            </section>
+
+            <section class="user-profile">
+                <h2>Your Profile</h2>
+                <div class="profile-item">
+                    <p>Name: <strong>John Doe</strong></p>
+                    <p>Email: <strong>john.doe@example.com</strong></p>
+                    <p>Member since: <strong>2021</strong></p>
+                </div>
+                <button class="btn">Edit Profile</button>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ShopEasy. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
